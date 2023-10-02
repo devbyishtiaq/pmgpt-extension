@@ -1,0 +1,25 @@
+{
+  "action": {
+    "default_title": "PMGPT"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["contentScript.js"],
+      "matches": ["https://chat.openai.com/*"],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "Prompts for project managers/project management",
+  "icons": {
+    "128": "icons/icon_128.png",
+    "16": "icons/icon_128.png",
+    "32": "icons/icon_128.png",
+    "48": "icons/icon_128.png"
+  },
+  "manifest_version": 3,
+  "name": "PMGPT",
+  "version": "0.1"
+}
